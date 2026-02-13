@@ -24,10 +24,11 @@ description: Phoenix 专属执行规范与智能增强技能。用于 OpenClaw �
   - 下一步（明确动作）
 
 ## 任务模板
-- 新闻整理：先抓官方来源，再补行业媒体；输出“动态+影响分析+行动建议”。
+- 新闻整理：默认浏览器 + Google，若遇验证码/阻断则按后备方案切换；输出“动态+影响分析+行动建议”。
 - 主页日更：按固定模板生成“标题/三条重点/正文/CTA/今日变更摘要”。
 
 ## 参考文档
 - `references/recovery-playbook.md`
 - `references/reply-contract.md`
 - `references/news-brief-template.md`
+- `references/search-fallback-playbook.md`
