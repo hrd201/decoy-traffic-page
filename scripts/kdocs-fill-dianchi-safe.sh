@@ -39,10 +39,10 @@ if [ "$AUTO_LOCATE" = "1" ]; then
   sleep 0.35
   run_xdotool key --window "$WIN" Escape
   sleep 0.15
-  # 经过实测，搜索命中后需右移2格才能到第一个数字列
-  run_xdotool key --window "$WIN" Right
-  sleep 0.12
-  run_xdotool key --window "$WIN" Right
+  # 搜索命中后，先退出编辑态，再用 Tab 跳到右侧数值列（比 Right 更稳定）
+  run_xdotool key --window "$WIN" Escape
+  sleep 0.10
+  run_xdotool key --window "$WIN" Tab
   sleep 0.2
 fi
 
