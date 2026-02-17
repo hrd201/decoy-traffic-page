@@ -6,7 +6,7 @@ description: Phoenix 专属执行规范与智能增强技能。用于 OpenClaw �
 # Phoenix Ops
 
 ## 核心执行规则
-1. 复杂任务先发“处理中（预计时间）”，完成后再发“最终结果”。
+1. 复杂任务先发"处理中（预计时间）"，完成后再发"最终结果"。
 2. 禁止只回复 `fetch failed`，必须包含：结果、原因、下一步。
 3. 优先稳定性：先观测再改动，每次只改一项并验证。
 
@@ -24,11 +24,72 @@ description: Phoenix 专属执行规范与智能增强技能。用于 OpenClaw �
   - 下一步（明确动作）
 
 ## 任务模板
-- 新闻整理：默认浏览器 + Google，若遇验证码/阻断则按后备方案切换；输出“动态+影响分析+行动建议”。
-- 主页日更：按固定模板生成“标题/三条重点/正文/CTA/今日变更摘要”。
+- 新闻整理：默认浏览器 + Google，若遇验证码/阻断则按后备方案切换；输出"动态+影响分析+行动建议"。
+- 主页日更：按固定模板生成"标题/三条重点/正文/CTA/今日变更摘要"。
 
-## 参考文档
-- `references/recovery-playbook.md`
-- `references/reply-contract.md`
-- `references/news-brief-template.md`
-- `references/search-fallback-playbook.md`
+---
+
+# 远程桌面 (RDP) 运维手册
+
+## 服务器信息
+- **当前服务器**：61.138.213.163 (SSH 端口 8877，用户 openclaw)
+- **RDP 端口**：3389（通过 SSH 隧道访问）
+- **SSH 隧道命令**：`ssh -N -L 13389:127.0.0.1:3389 openclaw@61.138.213.163 -p 8877`
+
+## 常见问题排查
+
+### RDP 黑屏
+**原因**：xrdp-sesman 未启动
+
+**检查命令**：
+```bash
+ps aux | grep xrdp | grep -v grep
+```
+需要同时看到 `xrdp` 和 `xrdp-sesman` 运行。
+
+**启动命令**：
+```bash
+sudo killall -9 xrdp xrdp-sesman Xorg xrdp-chansrv 2>/dev/null
+sudo rm -f /var/run/xrdp/*.pid
+sudo /usr/sbin/xrdp-sesman
+sudo /usr/sbin/xrdp
+```
+
+### 切换桌面环境
+- **XFCE**：`sudo sed -i 's/cinnamon-session/startxfce4/' /etc/xrdp/startwm.sh`
+- **Cinnamon**：`sudo sed -i 's/startxfce4/cinnamon-session/' /etc/xrdp/startwm.sh`
+- 改完后重启：`sudo killall -HUP xrdp`
+
+### 注意事项
+- Cinnamon 在 RDP 上有时不稳定，XFCE 更可靠
+- 每次修改配置后建议完全重启 xrdp 和 sesman
+
+---
+
+# KDocs 定时填表
+
+## 脚本位置
+`/home/openclaw/.openclaw/workspace/scripts/kdocs-fill-dianchi-safe.sh`
+
+## 填表条件
+1. **Firefox 必须在运行**且**窗口可见**（不能最小化到托盘）
+2. 文档名称包含："2026年 春节网络通信保障日报"
+3. 需要 DISPLAY 环境变量
+
+## 手动执行
+```bash
+# 先确认 Firefox 窗口
+sudo -u openclaw env DISPLAY=:20 XAUTHORITY=/home/openclaw/.Xauthority xdotool search --name firefox
+
+# 运行填表脚本
+DISPLAY_VAL=:20 XAUTHORITY=/home/openclaw/.Xauthority bash /home/openclaw/.openclaw/workspace/scripts/kdocs-fill-dianchi-safe.sh
+```
+
+## 定时任务状态
+- 07:30 滇池填报
+- 17:00 滇池填报
+
+## 注意事项
+- xdotool 需要窗口在前台/激活状态才能操作
+- 不能最小化 Firefox 窗口到托盘
+- 保持窗口可见即可（可以缩小）
