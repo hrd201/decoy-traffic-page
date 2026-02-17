@@ -32,9 +32,9 @@ description: Phoenix 专属执行规范与智能增强技能。用于 OpenClaw �
 # 远程桌面 (RDP) 运维手册
 
 ## 服务器信息
-- **当前服务器**：61.138.213.163 (SSH 端口 8877，用户 openclaw)
-- **RDP 端口**：3389（通过 SSH 隧道访问）
-- **SSH 隧道命令**：`ssh -N -L 13389:127.0.0.1:3389 openclaw@61.138.213.163 -p 8877`
+> 注意：敏感信息存储在 TOOLS.md 中
+
+- **SSH 隧道命令**：`ssh -N -L 13389:127.0.0.1:3389 <用户名>@<服务器IP> -p <SSH端口>`
 
 ## 常见问题排查
 
@@ -69,20 +69,20 @@ sudo /usr/sbin/xrdp
 # KDocs 定时填表
 
 ## 脚本位置
-`/home/openclaw/.openclaw/workspace/scripts/kdocs-fill-dianchi-safe.sh`
+> 注意：敏感配置存储在脚本中或通过环境变量传递
 
 ## 填表条件
 1. **Firefox 必须在运行**且**窗口可见**（不能最小化到托盘）
 2. 文档名称包含："2026年 春节网络通信保障日报"
-3. 需要 DISPLAY 环境变量
+3. 需要正确的 DISPLAY 环境变量
 
 ## 手动执行
 ```bash
-# 先确认 Firefox 窗口
-sudo -u openclaw env DISPLAY=:20 XAUTHORITY=/home/openclaw/.Xauthority xdotool search --name firefox
+# 先确认 Firefox 窗口和 DISPLAY
+sudo -u <用户名> env DISPLAY=<显示编号> XAUTHORITY=/home/<用户名>/.Xauthority xdotool search --name firefox
 
 # 运行填表脚本
-DISPLAY_VAL=:20 XAUTHORITY=/home/openclaw/.Xauthority bash /home/openclaw/.openclaw/workspace/scripts/kdocs-fill-dianchi-safe.sh
+DISPLAY_VAL=<显示编号> XAUTHORITY=/home/<用户名>/.Xauthority bash /home/openclaw/.openclaw/workspace/scripts/kdocs-fill-dianchi-safe.sh
 ```
 
 ## 定时任务状态
