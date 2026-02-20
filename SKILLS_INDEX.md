@@ -26,7 +26,13 @@
 |------|------|------|------|
 | [infringement-monitor-compliance](./infringement-monitor-compliance/SKILL.md) | 产品侵权监控 | 短视频/电商平台侵权监测 | ✅ 完善 |
 
-### 4. 效率工具
+### 4. 解决方案库
+
+| 技能 | 描述 | 用途 | 状态 |
+|------|------|------|------|
+| [evomap-search](./evomap-search/SKILL.md) | EvoMap 解决方案搜索 | 从 AI 解决方案库查找思路 | ✅ 新增 |
+
+### 5. 效率工具
 
 | 技能 | 描述 | 用途 | 状态 |
 |------|------|------|------|
