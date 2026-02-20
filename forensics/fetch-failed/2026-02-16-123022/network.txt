@@ -1,0 +1,22 @@
+=== DNS ===
+168.143.162.58  api.telegram.org
+103.39.76.66    api.openai.com
+=== ROUTE ===
+default dev ppp0 scope link 
+112.112.109.1 dev ppp0 proto kernel scope link src 112.112.109.118 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+172.18.0.0/16 dev br-13e0e84dcf6d proto kernel scope link src 172.18.0.1 
+172.19.0.0/16 dev br-50909265c0d8 proto kernel scope link src 172.19.0.1 linkdown 
+192.168.11.0/24 dev ens192 proto kernel scope link src 192.168.11.33 
+198.18.0.0/30 dev Meta proto kernel scope link src 198.18.0.1 
+=== TCP ===
+Total: 1566
+TCP:   67 (estab 22, closed 13, orphaned 0, timewait 9)
+
+Transport Total     IP        IPv6
+RAW	  0         0         0        
+UDP	  15        11        4        
+TCP	  54        39        15       
+INET	  69        50        19       
+FRAG	  0         0         0        
+

@@ -9,7 +9,7 @@ fi
 trap 'rm -f "$LOCK"' EXIT
 : > "$LOCK"
 
-DISPLAY_VAL=${DISPLAY_VAL:-:11}
+DISPLAY_VAL=${DISPLAY_VAL:-:20}
 XAUTH=${XAUTH:-/home/openclaw/.Xauthority}
 USER_NAME=${USER_NAME:-openclaw}
 AUTO_LOCATE=${AUTO_LOCATE:-1}

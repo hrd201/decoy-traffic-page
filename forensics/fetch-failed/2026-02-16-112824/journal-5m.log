@@ -1,0 +1,43 @@
+2026-02-16T11:25:21+0800 debian openclaw[1489092]: 2026-02-16T03:25:21.120Z [ws] ⇄ res ✓ sessions.list 159ms conn=0d834a15…312b id=ee92401c…8bb7
+2026-02-16T11:25:21+0800 debian openclaw[1489092]: 2026-02-16T03:25:21.289Z [ws] ⇄ res ✓ chat.history 166ms conn=ae12c321…3209 id=455f7112…1dbb
+2026-02-16T11:25:34+0800 debian openclaw[1489092]: 2026-02-16T03:25:34.940Z [ws] webchat disconnected code=1001 reason=n/a conn=ae12c321-6bb0-472a-9971-546dbc0a3209
+2026-02-16T11:25:35+0800 debian openclaw[1489092]: 2026-02-16T03:25:35.117Z [ws] Proxy headers detected from untrusted address. Connection will not be treated as local. Configure gateway.trustedProxies to restore local client detection behind your proxy.
+2026-02-16T11:25:35+0800 debian openclaw[1489092]: 2026-02-16T03:25:35.147Z [ws] webchat connected conn=bb148ece-7772-46da-a3d3-7d1cfa44c6b8 remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-16T11:25:35+0800 debian openclaw[1489092]: 2026-02-16T03:25:35.418Z [ws] ⇄ res ✓ sessions.list 57ms conn=bb148ece…c6b8 id=7426048c…0b68
+2026-02-16T11:25:35+0800 debian openclaw[1489092]: 2026-02-16T03:25:35.499Z [ws] ⇄ res ✓ status 78ms conn=bb148ece…c6b8 id=c36a7b65…87cc
+2026-02-16T11:25:35+0800 debian openclaw[1489092]: 2026-02-16T03:25:35.501Z [ws] ⇄ res ✓ models.list 51ms conn=bb148ece…c6b8 id=142e853e…8e83
+2026-02-16T11:25:35+0800 debian openclaw[1489092]: 2026-02-16T03:25:35.503Z [ws] ⇄ res ✓ cron.status 83ms conn=bb148ece…c6b8 id=5c619e2a…c3be
+2026-02-16T11:25:35+0800 debian openclaw[1489092]: 2026-02-16T03:25:35.516Z [ws] ⇄ res ✓ node.list 157ms conn=bb148ece…c6b8 id=5996b1c9…b749
+2026-02-16T11:25:35+0800 debian openclaw[1489092]: 2026-02-16T03:25:35.518Z [ws] ⇄ res ✓ device.pair.list 159ms conn=bb148ece…c6b8 id=49364ac8…a119
+2026-02-16T11:25:46+0800 debian openclaw[1489092]: 2026-02-16T03:25:46.192Z [ws] ⇄ res ✓ chat.history 169ms conn=bb148ece…c6b8 id=a3abdac1…68f0
+2026-02-16T11:25:46+0800 debian openclaw[1489092]: 2026-02-16T03:25:46.257Z [ws] ⇄ res ✓ sessions.list 64ms conn=bb148ece…c6b8 id=9f3d4199…1c5b
+2026-02-16T11:27:31+0800 debian openclaw[1489092]: 2026-02-16T03:27:31.413Z [ws] ⇄ res ✓ config.get 391ms conn=513ec945…a473 id=7ccee8ac…bb0f
+2026-02-16T11:27:31+0800 debian openclaw[1489092]: 2026-02-16T11:27:31.695+08:00 [tools] exec failed: Command exited with code 1
+2026-02-16T11:27:42+0800 debian openclaw[1489092]: 2026-02-16T11:27:42.066+08:00 [tools] exec failed: Traceback (most recent call last):
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:   File "<string>", line 1, in <module>
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:   File "/usr/lib/python3.11/json/__init__.py", line 293, in load
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:     return loads(fp.read(),
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:            ^^^^^^^^^^^^^^^^
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:   File "/usr/lib/python3.11/json/__init__.py", line 346, in loads
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:     return _default_decoder.decode(s)
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:   File "/usr/lib/python3.11/json/decoder.py", line 337, in decode
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:   File "/usr/lib/python3.11/json/decoder.py", line 355, in raw_decode
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:     raise JSONDecodeError("Expecting value", s, err.value) from None
+2026-02-16T11:27:42+0800 debian openclaw[1489092]: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2026-02-16T11:27:42+0800 debian openclaw[1489092]: Command exited with code 1
+2026-02-16T11:27:45+0800 debian sudo[1492399]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WA ; COMMAND=/usr/bin/systemctl status openclaw-gateway.service --no-pager
+2026-02-16T11:27:45+0800 debian sudo[1492399]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:27:45+0800 debian sudo[1492399]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:27:54+0800 debian openclaw[1489092]: 2026-02-16T11:27:54.684+08:00 [tools] exec failed: Command exited with code 1
+2026-02-16T11:28:22+0800 debian openclaw[1489092]: 2026-02-16T11:28:22.246+08:00 [tools] exec failed: Command exited with code 1
+2026-02-16T11:28:23+0800 debian sudo[1493130]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WB ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --no-pager --after-cursor s=57cd5fafc9094d9f9037ea5698ab3f3c;i=28a0c1d;b=15199fa9a7f74c5bb22db4054d049e58;m=49c4e2e9449;t=64ae469c6c2e6;x=4e96a264c105c722 -o short-iso
+2026-02-16T11:28:23+0800 debian sudo[1493130]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:28:23+0800 debian sudo[1493130]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:28:23+0800 debian sudo[1493133]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WC ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service -n 1 --show-cursor --no-pager
+2026-02-16T11:28:23+0800 debian sudo[1493133]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:28:24+0800 debian sudo[1493133]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:28:24+0800 debian sudo[1493143]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WD ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --since '5 minutes ago' --no-pager -o short-iso
+2026-02-16T11:28:24+0800 debian sudo[1493143]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)

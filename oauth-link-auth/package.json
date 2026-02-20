@@ -1,0 +1,12 @@
+{
+  "name": "oauth-link-auth",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "oauth-link-auth": "./auth-cli.js"
+  },
+  "scripts": {
+    "start": "node auth-cli.js"
+  }
+}

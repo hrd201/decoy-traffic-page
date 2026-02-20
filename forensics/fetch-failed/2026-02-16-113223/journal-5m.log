@@ -1,0 +1,130 @@
+2026-02-16T11:27:31+0800 debian openclaw[1489092]: 2026-02-16T03:27:31.413Z [ws] ⇄ res ✓ config.get 391ms conn=513ec945…a473 id=7ccee8ac…bb0f
+2026-02-16T11:27:31+0800 debian openclaw[1489092]: 2026-02-16T11:27:31.695+08:00 [tools] exec failed: Command exited with code 1
+2026-02-16T11:27:42+0800 debian openclaw[1489092]: 2026-02-16T11:27:42.066+08:00 [tools] exec failed: Traceback (most recent call last):
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:   File "<string>", line 1, in <module>
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:   File "/usr/lib/python3.11/json/__init__.py", line 293, in load
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:     return loads(fp.read(),
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:            ^^^^^^^^^^^^^^^^
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:   File "/usr/lib/python3.11/json/__init__.py", line 346, in loads
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:     return _default_decoder.decode(s)
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:   File "/usr/lib/python3.11/json/decoder.py", line 337, in decode
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:     obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:   File "/usr/lib/python3.11/json/decoder.py", line 355, in raw_decode
+2026-02-16T11:27:42+0800 debian openclaw[1489092]:     raise JSONDecodeError("Expecting value", s, err.value) from None
+2026-02-16T11:27:42+0800 debian openclaw[1489092]: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2026-02-16T11:27:42+0800 debian openclaw[1489092]: Command exited with code 1
+2026-02-16T11:27:45+0800 debian sudo[1492399]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WA ; COMMAND=/usr/bin/systemctl status openclaw-gateway.service --no-pager
+2026-02-16T11:27:45+0800 debian sudo[1492399]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:27:45+0800 debian sudo[1492399]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:27:54+0800 debian openclaw[1489092]: 2026-02-16T11:27:54.684+08:00 [tools] exec failed: Command exited with code 1
+2026-02-16T11:28:22+0800 debian openclaw[1489092]: 2026-02-16T11:28:22.246+08:00 [tools] exec failed: Command exited with code 1
+2026-02-16T11:28:23+0800 debian sudo[1493130]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WB ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --no-pager --after-cursor s=57cd5fafc9094d9f9037ea5698ab3f3c;i=28a0c1d;b=15199fa9a7f74c5bb22db4054d049e58;m=49c4e2e9449;t=64ae469c6c2e6;x=4e96a264c105c722 -o short-iso
+2026-02-16T11:28:23+0800 debian sudo[1493130]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:28:23+0800 debian sudo[1493130]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:28:23+0800 debian sudo[1493133]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WC ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service -n 1 --show-cursor --no-pager
+2026-02-16T11:28:23+0800 debian sudo[1493133]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:28:24+0800 debian sudo[1493133]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:28:24+0800 debian sudo[1493143]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WD ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --since '5 minutes ago' --no-pager -o short-iso
+2026-02-16T11:28:24+0800 debian sudo[1493143]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:28:24+0800 debian sudo[1493143]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:28:24+0800 debian sudo[1493147]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WE ; COMMAND=/usr/bin/systemctl is-active openclaw-gateway.service
+2026-02-16T11:28:24+0800 debian sudo[1493147]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:28:24+0800 debian sudo[1493147]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:28:43+0800 debian openclaw[1489092]: 2026-02-16T03:28:43.170Z [reload] config change detected; evaluating reload (models.providers.minimax-cn.models, channels, plugins)
+2026-02-16T11:28:43+0800 debian openclaw[1489092]: 2026-02-16T03:28:43.173Z [reload] config change requires gateway restart (channels, plugins) — deferring until 2 operation(s), 1 reply(ies), 1 embedded run(s) complete
+2026-02-16T11:28:46+0800 debian sudo[1493440]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WF ; COMMAND=/usr/bin/systemctl restart openclaw-gateway.service
+2026-02-16T11:28:46+0800 debian sudo[1493440]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:28:46+0800 debian systemd[1]: Stopping openclaw-gateway.service - OpenClaw Gateway...
+2026-02-16T11:28:46+0800 debian sudo[1493440]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:28:46+0800 debian openclaw[1489092]: 2026-02-16T03:28:46.586Z [gateway] signal SIGTERM received
+2026-02-16T11:28:46+0800 debian openclaw[1489092]: 2026-02-16T03:28:46.588Z [gateway] received SIGTERM; shutting down
+2026-02-16T11:28:46+0800 debian openclaw[1489092]: 2026-02-16T03:28:46.592Z [gateway] signal SIGTERM received
+2026-02-16T11:28:46+0800 debian openclaw[1489092]: 2026-02-16T03:28:46.594Z [gateway] received SIGTERM during shutdown; ignoring
+2026-02-16T11:28:46+0800 debian openclaw[1489092]: 2026-02-16T11:28:46.596+08:00 [tools] exec failed: Command aborted by signal SIGTERM
+2026-02-16T11:28:46+0800 debian openclaw[1489092]: 2026-02-16T03:28:46.672Z [gmail-watcher] gmail watcher stopped
+2026-02-16T11:28:47+0800 debian openclaw[1489092]: 2026-02-16T03:28:47.055Z [ws] webchat disconnected code=1012 reason=service restart conn=bb148ece-7772-46da-a3d3-7d1cfa44c6b8
+2026-02-16T11:28:47+0800 debian systemd[1]: openclaw-gateway.service: Deactivated successfully.
+2026-02-16T11:28:47+0800 debian systemd[1]: Stopped openclaw-gateway.service - OpenClaw Gateway.
+2026-02-16T11:28:47+0800 debian systemd[1]: openclaw-gateway.service: Consumed 41.848s CPU time.
+2026-02-16T11:28:47+0800 debian systemd[1]: Starting openclaw-gateway.service - OpenClaw Gateway...
+2026-02-16T11:28:47+0800 debian systemd[1]: Started openclaw-gateway.service - OpenClaw Gateway.
+2026-02-16T11:28:51+0800 debian openclaw[1493457]: 2026-02-16T03:28:51.004Z [canvas] host mounted at http://127.0.0.1:18789/__openclaw__/canvas/ (root /home/openclaw/.openclaw/canvas)
+2026-02-16T11:28:51+0800 debian openclaw[1493457]: 2026-02-16T03:28:51.261Z [heartbeat] started
+2026-02-16T11:28:51+0800 debian openclaw[1493457]: 2026-02-16T03:28:51.269Z [gateway] agent model: minimax-cn/MiniMax-M2.5
+2026-02-16T11:28:51+0800 debian openclaw[1493457]: 2026-02-16T03:28:51.271Z [gateway] listening on ws://127.0.0.1:18789 (PID 1493457)
+2026-02-16T11:28:51+0800 debian openclaw[1493457]: 2026-02-16T03:28:51.272Z [gateway] listening on ws://[::1]:18789
+2026-02-16T11:28:51+0800 debian openclaw[1493457]: 2026-02-16T03:28:51.275Z [gateway] log file: /tmp/openclaw/openclaw-2026-02-16.log
+2026-02-16T11:28:51+0800 debian openclaw[1493457]: 2026-02-16T03:28:51.309Z [browser/service] Browser control service ready (profiles=2)
+2026-02-16T11:28:51+0800 debian openclaw[1493457]: 2026-02-16T03:28:51.754Z [ws] Proxy headers detected from untrusted address. Connection will not be treated as local. Configure gateway.trustedProxies to restore local client detection behind your proxy.
+2026-02-16T11:28:51+0800 debian openclaw[1493457]: 2026-02-16T03:28:51.768Z [ws] webchat connected conn=6c667589-364d-40f1-b50d-1eb2ef6adb08 remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-16T11:28:52+0800 debian openclaw[1493457]: 2026-02-16T03:28:52.063Z [ws] ⇄ res ✓ sessions.list 92ms conn=6c667589…db08 id=61d402d8…4877
+2026-02-16T11:28:52+0800 debian openclaw[1493457]: 2026-02-16T03:28:52.073Z [ws] ⇄ res ✓ node.list 288ms conn=6c667589…db08 id=108f333f…ae19
+2026-02-16T11:28:52+0800 debian openclaw[1493457]: 2026-02-16T03:28:52.076Z [ws] ⇄ res ✓ device.pair.list 289ms conn=6c667589…db08 id=503f1815…deb4
+2026-02-16T11:28:52+0800 debian openclaw[1493457]: 2026-02-16T03:28:52.109Z [ws] ⇄ res ✓ chat.history 322ms conn=6c667589…db08 id=03b0bb6c…9022
+2026-02-16T11:28:52+0800 debian openclaw[1493457]: 2026-02-16T03:28:52.968Z [telegram] [default] starting provider (@hrd201pc_bot)
+2026-02-16T11:28:52+0800 debian openclaw[1493457]: 2026-02-16T03:28:52.973Z [telegram] autoSelectFamily=true (config)
+2026-02-16T11:28:53+0800 debian openclaw[1493457]: 2026-02-16T03:28:53.384Z [bonjour] gateway name conflict resolved; newName="debian (OpenClaw) (2)"
+2026-02-16T11:28:53+0800 debian openclaw[1493457]: 2026-02-16T03:28:53.387Z [bonjour] gateway hostname conflict resolved; newHostname="openclaw-(2)"
+2026-02-16T11:28:54+0800 debian openclaw[1493457]: 2026-02-16T03:28:54.400Z [ws] ⇄ res ✓ chat.history 219ms conn=fbe506cd…f35b id=a4822e2b…0f52
+2026-02-16T11:28:54+0800 debian openclaw[1493457]: 2026-02-16T03:28:54.536Z [ws] ⇄ res ✓ sessions.list 130ms conn=fbe506cd…f35b id=0c7d7986…1c4e
+2026-02-16T11:29:12+0800 debian openclaw[1493457]: 2026-02-16T03:29:12.011Z [ws] ⇄ res ✓ chat.history 189ms conn=fbe506cd…f35b id=d5c9b68e…61a2
+2026-02-16T11:29:12+0800 debian openclaw[1493457]: 2026-02-16T03:29:12.181Z [ws] ⇄ res ✓ chat.history 165ms conn=6c667589…db08 id=0266cf77…ec71
+2026-02-16T11:30:28+0800 debian sudo[1494591]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WG ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --no-pager --after-cursor s=57cd5fafc9094d9f9037ea5698ab3f3c;i=28a6273;b=15199fa9a7f74c5bb22db4054d049e58;m=4a07086d47c;t=64ae88c1f0319;x=2a2600600149223f -o short-iso
+2026-02-16T11:30:28+0800 debian sudo[1494591]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:30:28+0800 debian sudo[1494591]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:30:28+0800 debian sudo[1494594]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WH ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service -n 1 --show-cursor --no-pager
+2026-02-16T11:30:28+0800 debian sudo[1494594]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:30:28+0800 debian sudo[1494594]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:31:11+0800 debian openclaw[1493457]: 2026-02-16T03:31:11.480Z [reload] config change detected; evaluating reload (models.providers.minimax-cn.models, diagnostics, browser)
+2026-02-16T11:31:11+0800 debian openclaw[1493457]: 2026-02-16T03:31:11.482Z [reload] config change requires gateway restart (diagnostics) — deferring until 2 operation(s), 1 reply(ies), 1 embedded run(s) complete
+2026-02-16T11:31:17+0800 debian openclaw[1493457]: 2026-02-16T03:31:17.198Z [reload] config change detected; evaluating reload (models.providers.minimax-cn.models, gateway.trustedProxies, gateway.nodes)
+2026-02-16T11:31:21+0800 debian sudo[1495355]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WI ; COMMAND=/usr/bin/systemctl restart openclaw-gateway.service
+2026-02-16T11:31:21+0800 debian sudo[1495355]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:31:21+0800 debian systemd[1]: Stopping openclaw-gateway.service - OpenClaw Gateway...
+2026-02-16T11:31:21+0800 debian sudo[1495355]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:31:21+0800 debian openclaw[1493457]: 2026-02-16T03:31:21.265Z [gateway] signal SIGTERM received
+2026-02-16T11:31:21+0800 debian openclaw[1493457]: 2026-02-16T03:31:21.267Z [gateway] received SIGTERM; shutting down
+2026-02-16T11:31:21+0800 debian openclaw[1493457]: 2026-02-16T03:31:21.271Z [gateway] signal SIGTERM received
+2026-02-16T11:31:21+0800 debian openclaw[1493457]: 2026-02-16T03:31:21.272Z [gateway] received SIGTERM during shutdown; ignoring
+2026-02-16T11:31:21+0800 debian openclaw[1493457]: 2026-02-16T11:31:21.275+08:00 [tools] exec failed: Command aborted by signal SIGTERM
+2026-02-16T11:31:21+0800 debian openclaw[1493457]: 2026-02-16T03:31:21.363Z [gmail-watcher] gmail watcher stopped
+2026-02-16T11:31:21+0800 debian openclaw[1493457]: 2026-02-16T11:31:21.660+08:00 [openclaw] Suppressed AbortError: AbortError: This operation was aborted
+2026-02-16T11:31:21+0800 debian openclaw[1493457]:     at node:internal/deps/undici/undici:14902:13
+2026-02-16T11:31:21+0800 debian openclaw[1493457]:     at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-16T11:31:21+0800 debian openclaw[1493457]:     at runNextTicks (node:internal/process/task_queues:69:3)
+2026-02-16T11:31:21+0800 debian openclaw[1493457]:     at processTimers (node:internal/timers:520:9)
+2026-02-16T11:31:21+0800 debian openclaw[1493457]: 2026-02-16T03:31:21.673Z [ws] webchat disconnected code=1012 reason=service restart conn=6c667589-364d-40f1-b50d-1eb2ef6adb08
+2026-02-16T11:31:21+0800 debian systemd[1]: openclaw-gateway.service: Deactivated successfully.
+2026-02-16T11:31:21+0800 debian systemd[1]: Stopped openclaw-gateway.service - OpenClaw Gateway.
+2026-02-16T11:31:21+0800 debian systemd[1]: openclaw-gateway.service: Consumed 25.125s CPU time.
+2026-02-16T11:31:21+0800 debian systemd[1]: Starting openclaw-gateway.service - OpenClaw Gateway...
+2026-02-16T11:31:21+0800 debian systemd[1]: Started openclaw-gateway.service - OpenClaw Gateway.
+2026-02-16T11:31:25+0800 debian openclaw[1495367]: 2026-02-16T03:31:25.500Z [canvas] host mounted at http://127.0.0.1:18789/__openclaw__/canvas/ (root /home/openclaw/.openclaw/canvas)
+2026-02-16T11:31:25+0800 debian openclaw[1495367]: 2026-02-16T03:31:25.770Z [heartbeat] started
+2026-02-16T11:31:25+0800 debian openclaw[1495367]: 2026-02-16T03:31:25.778Z [gateway] agent model: minimax-cn/MiniMax-M2.5
+2026-02-16T11:31:25+0800 debian openclaw[1495367]: 2026-02-16T03:31:25.780Z [gateway] listening on ws://127.0.0.1:18789 (PID 1495367)
+2026-02-16T11:31:25+0800 debian openclaw[1495367]: 2026-02-16T03:31:25.782Z [gateway] listening on ws://[::1]:18789
+2026-02-16T11:31:25+0800 debian openclaw[1495367]: 2026-02-16T03:31:25.784Z [gateway] log file: /tmp/openclaw/openclaw-2026-02-16.log
+2026-02-16T11:31:25+0800 debian openclaw[1495367]: 2026-02-16T03:31:25.818Z [browser/service] Browser control service ready (profiles=2)
+2026-02-16T11:31:27+0800 debian openclaw[1495367]: 2026-02-16T03:31:27.481Z [telegram] [default] starting provider (@hrd201pc_bot)
+2026-02-16T11:31:27+0800 debian openclaw[1495367]: 2026-02-16T03:31:27.488Z [telegram] autoSelectFamily=true (config)
+2026-02-16T11:31:27+0800 debian openclaw[1495367]: 2026-02-16T03:31:27.909Z [bonjour] gateway name conflict resolved; newName="debian (OpenClaw) (2)"
+2026-02-16T11:31:27+0800 debian openclaw[1495367]: 2026-02-16T03:31:27.912Z [bonjour] gateway hostname conflict resolved; newHostname="openclaw-(2)"
+2026-02-16T11:31:28+0800 debian openclaw[1495367]: 2026-02-16T03:31:28.072Z [ws] webchat connected conn=3703d014-acd1-436c-9438-9f9260b6d4e1 remote=127.0.0.1 client=openclaw-control-ui webchat vdev
+2026-02-16T11:31:28+0800 debian openclaw[1495367]: 2026-02-16T03:31:28.379Z [ws] ⇄ res ✓ sessions.list 96ms conn=3703d014…d4e1 id=1636e9f1…c893
+2026-02-16T11:31:28+0800 debian openclaw[1495367]: 2026-02-16T03:31:28.392Z [ws] ⇄ res ✓ node.list 300ms conn=3703d014…d4e1 id=32241ca2…a9e0
+2026-02-16T11:31:28+0800 debian openclaw[1495367]: 2026-02-16T03:31:28.395Z [ws] ⇄ res ✓ device.pair.list 301ms conn=3703d014…d4e1 id=82bca0a3…b540
+2026-02-16T11:31:28+0800 debian openclaw[1495367]: 2026-02-16T03:31:28.428Z [ws] ⇄ res ✓ chat.history 335ms conn=3703d014…d4e1 id=6c10a2ab…0984
+2026-02-16T11:31:28+0800 debian openclaw[1495367]: 2026-02-16T03:31:28.922Z [ws] ⇄ res ✓ chat.history 209ms conn=e6a5df2f…2946 id=5c61213f…0f73
+2026-02-16T11:31:29+0800 debian openclaw[1495367]: 2026-02-16T03:31:29.036Z [ws] ⇄ res ✓ sessions.list 107ms conn=e6a5df2f…2946 id=7995f180…066a
+2026-02-16T11:31:44+0800 debian openclaw[1495367]: 2026-02-16T03:31:44.990Z [ws] webchat disconnected code=1001 reason=n/a conn=3703d014-acd1-436c-9438-9f9260b6d4e1
+2026-02-16T11:32:22+0800 debian sudo[1495802]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WJ ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --no-pager --after-cursor s=57cd5fafc9094d9f9037ea5698ab3f3c;i=28a636e;b=15199fa9a7f74c5bb22db4054d049e58;m=4a077eeb2db;t=64ae89386e179;x=472efc9ab37c4e17 -o short-iso
+2026-02-16T11:32:22+0800 debian sudo[1495802]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:32:23+0800 debian sudo[1495802]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:32:23+0800 debian sudo[1495805]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WK ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service -n 1 --show-cursor --no-pager
+2026-02-16T11:32:23+0800 debian sudo[1495805]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T11:32:23+0800 debian sudo[1495805]: pam_unix(sudo:session): session closed for user root
+2026-02-16T11:32:23+0800 debian sudo[1495815]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WL ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --since '5 minutes ago' --no-pager -o short-iso
+2026-02-16T11:32:23+0800 debian sudo[1495815]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)

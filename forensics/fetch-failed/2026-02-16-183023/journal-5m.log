@@ -1,0 +1,23 @@
+2026-02-16T18:26:23+0800 debian sudo[1516896]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=9Z ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --no-pager --after-cursor s=57cd5fafc9094d9f9037ea5698ab3f3c;i=28ab509;b=15199fa9a7f74c5bb22db4054d049e58;m=4a6406e8cfa;t=64aee5c06bb98;x=e3efba9f957aee96 -o short-iso
+2026-02-16T18:26:23+0800 debian sudo[1516896]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T18:26:23+0800 debian sudo[1516896]: pam_unix(sudo:session): session closed for user root
+2026-02-16T18:26:23+0800 debian sudo[1516899]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=A0 ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service -n 1 --show-cursor --no-pager
+2026-02-16T18:26:23+0800 debian sudo[1516899]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T18:26:23+0800 debian sudo[1516899]: pam_unix(sudo:session): session closed for user root
+2026-02-16T18:28:22+0800 debian sudo[1517018]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=A1 ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --no-pager --after-cursor s=57cd5fafc9094d9f9037ea5698ab3f3c;i=28ab548;b=15199fa9a7f74c5bb22db4054d049e58;m=4a6475fdf54;t=64aee62f80df2;x=96955298e61769a6 -o short-iso
+2026-02-16T18:28:22+0800 debian sudo[1517018]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T18:28:22+0800 debian sudo[1517018]: pam_unix(sudo:session): session closed for user root
+2026-02-16T18:28:22+0800 debian sudo[1517021]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=A2 ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service -n 1 --show-cursor --no-pager
+2026-02-16T18:28:22+0800 debian sudo[1517021]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T18:28:23+0800 debian sudo[1517021]: pam_unix(sudo:session): session closed for user root
+2026-02-16T18:29:03+0800 debian openclaw[1495367]: 2026-02-16T18:29:03.353+08:00 [openclaw] Non-fatal unhandled rejection (continuing): TypeError: fetch failed
+2026-02-16T18:29:03+0800 debian openclaw[1495367]:     at node:internal/deps/undici/undici:14902:13
+2026-02-16T18:29:03+0800 debian openclaw[1495367]:     at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-16T18:30:23+0800 debian sudo[1517170]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=A3 ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --no-pager --after-cursor s=57cd5fafc9094d9f9037ea5698ab3f3c;i=28ab5c5;b=15199fa9a7f74c5bb22db4054d049e58;m=4a64e814f99;t=64aee6a197e37;x=b17b6ac62f9ef4cb -o short-iso
+2026-02-16T18:30:23+0800 debian sudo[1517170]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T18:30:23+0800 debian sudo[1517170]: pam_unix(sudo:session): session closed for user root
+2026-02-16T18:30:23+0800 debian sudo[1517173]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=A4 ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service -n 1 --show-cursor --no-pager
+2026-02-16T18:30:23+0800 debian sudo[1517173]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
+2026-02-16T18:30:23+0800 debian sudo[1517173]: pam_unix(sudo:session): session closed for user root
+2026-02-16T18:30:23+0800 debian sudo[1517183]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=A5 ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --since '5 minutes ago' --no-pager -o short-iso
+2026-02-16T18:30:23+0800 debian sudo[1517183]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
