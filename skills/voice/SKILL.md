@@ -6,7 +6,7 @@
 
 | 功能 | 描述 | 命令 |
 |------|------|------|
-| **TTS** | 文字转语音 (Text-to-Speech) | `tts_edge.py --mode tts --text "内容" --voice zh-CN-YunxiNeural` |
+| **TTS** | 文字转语音 (Text-to-Speech) | `tts_edge.py --mode tts --text "内容" --voice zh-CN-XiaoxiaoNeural` |
 | **STT** | 语音转文字 (Speech-to-Text) | `tts_edge.py --mode stt --audio /path/to/audio.ogg` |
 
 ## 环境要求
