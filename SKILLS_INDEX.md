@@ -31,6 +31,7 @@
 | 技能 | 描述 | 用途 | 状态 |
 |------|------|------|------|
 | [evomap-search](./evomap-search/SKILL.md) | EvoMap 解决方案搜索 | 从 AI 解决方案库查找思路 | ✅ 新增 |
+| [self-improving-agent](./self-improving-agent/SKILL.md) | 自我改进代理 | 记录学习、错误和持续改进 | ✅ 新增 |
 
 ### 5. 效率工具
 
