@@ -33,7 +33,20 @@
 | [evomap-search](./evomap-search/SKILL.md) | EvoMap 解决方案搜索 | 从 AI 解决方案库查找思路 | ✅ 新增 |
 | [self-improving-agent](./self-improving-agent/SKILL.md) | 自我改进代理 | 记录学习、错误和持续改进 | ✅ 新增 |
 
-### 5. 效率工具
+### 5. 金融数据
+
+| 技能 | 描述 | 用途 | 状态 |
+|------|------|------|------|
+| [tushare-finance](./tushare-finance/SKILL.md) | 中国金融数据 | A股/港股/美股/基金/宏观数据 | ✅ 新增 |
+
+### 6. PDF 处理
+
+| 技能 | 描述 | 用途 | 状态 |
+|------|------|------|------|
+| [nano-pdf](./nano-pdf/SKILL.md) | PDF 文字提取/总结 | 读取 PDF 内容并回答问题 | ✅ 新增 |
+| [humanizer](./humanizer/SKILL.md) | 去除 AI 写作痕迹 | 让文字更自然更像人写 | ✅ 新增 |
+
+### 7. 效率工具
 
 | 技能 | 描述 | 用途 | 状态 |
 |------|------|------|------|
