@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1772183606911
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1772183622620
+    },
+    "openclaw-tavily-search": {
+      "version": "0.1.0",
+      "installedAt": 1772327328391
+    },
+    "openclaw-security-audit": {
+      "version": "1.0.0",
+      "installedAt": 1772328012774
+    },
+    "ontology": {
+      "version": "0.1.2",
+      "installedAt": 1772338601260
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1772342598107
+    }
+  }
+}

@@ -8,6 +8,12 @@ description: Diagnose and stabilize OpenClaw gateway/channel reliability issues.
 ## Goal
 Restore stable messaging and gateway uptime quickly, then provide a brief root-cause + action summary.
 
+## ⚠️ 先查文档！
+**遇到 OpenClaw 问题先查阅文档再处理：**
+- 官方文档：https://docs.openclaw.ai/
+- 本地文档：/usr/lib/node_modules/openclaw/docs/
+- 检索文档：/root/.openclaw/workspace/docs/OPENCLAW_REFERENCE.md
+
 ## Fast Triage
 Run in this order:
 1. Service state (`systemctl is-active`, `openclaw gateway health`)

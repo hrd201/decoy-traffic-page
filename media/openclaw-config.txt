@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.26",
+    "lastTouchedAt": "2026-03-01T02:02:47.221Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-17T05:30:38.260Z",
+    "lastRunVersion": "2026.2.14",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "diagnostics": {
+    "enabled": true,
+    "flags": [
+      "telegram.*"
+    ]
+  },
+  "browser": {
+    "enabled": true,
+    "executablePath": "/usr/bin/chromium",
+    "headless": true,
+    "noSandbox": true,
+    "defaultProfile": "openclaw",
+    "profiles": {
+      "openclaw": {
+        "cdpPort": 18800,
+        "color": "#FF4500"
+      },
+      "macbook": {
+        "cdpUrl": "http://127.0.0.1:19000",
+        "color": "#00AA00"
+      }
+    }
+  },
+  "secrets": {},
+  "auth": {
+    "profiles": {
+      "openai-codex:default": {
+        "provider": "openai-codex",
+        "mode": "oauth"
+      },
+      "minimax-cn:default": {
+        "provider": "minimax-cn",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-WS="/home/openclaw/.openclaw/workspace"
+WS="/root/.openclaw/workspace"
 HUB="$WS/skills-hub"
 SRC="$WS/skills"
 

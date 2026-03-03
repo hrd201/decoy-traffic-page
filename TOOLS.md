@@ -45,6 +45,15 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - **服务器**：61.138.213.163
 - **SSH 端口**：8877
 - **用户名**：openclaw
-- **SSH 密码**：hrd!188789
+- **SSH 密码**：环境变量 `$RDP_PASSWORD`
 - **RDP 本地端口**：13389（通过 SSH 隧道）
 - **DISPLAY 编号**：:20
+
+### Notion
+
+- **API Key**: 环境变量 `$NOTION_API_KEY`
+- **主页面**: open-claw
+- **URL**: https://www.notion.so/open-claw-30c3d91f2f008014bbcedf406ce05eec
+- **父页面 ID**: 30c3d91f2f008014bbcedf406ce05eec
+- **运维笔记数据库**: 30f3d91f2f0081e79b9af318c93807d1
+- **说明**: 新建页面默认创建在此页面下作为子页面
