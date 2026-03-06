@@ -82,7 +82,7 @@ sudo /usr/sbin/xrdp
 sudo -u <用户名> env DISPLAY=<显示编号> XAUTHORITY=/home/<用户名>/.Xauthority xdotool search --name firefox
 
 # 运行填表脚本
-DISPLAY_VAL=<显示编号> XAUTHORITY=/home/<用户名>/.Xauthority bash /home/openclaw/.openclaw/workspace/scripts/kdocs-fill-dianchi-safe.sh
+DISPLAY_VAL=<显示编号> XAUTHORITY=/home/<用户名>/.Xauthority bash ~/.openclaw/workspace/scripts/kdocs-fill-dianchi-safe.sh
 ```
 
 ## 定时任务状态

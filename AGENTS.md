@@ -29,6 +29,29 @@ This folder is home. Treat it that way.
 - 创建/更新任何文档前，必须确认："这份文档的语言是否与用户对话语言一致？"
 - 如果不一致，**立即停止**并用正确的语言重写
 
+## 📚 记忆系统 (Memory System)
+
+### 正确的调用顺序
+
+每次启动时，按以下顺序读取：
+
+```
+1. USER.md - 了解用户偏好
+2. IDENTITY.md - 了解自己是谁
+3. SOUL.md - 了解自己的行为方式
+4. memory/YYYY-MM-DD.md (今天 + 昨天) - 了解最近工作
+5. MEMORY.md (仅主会话) - 了解重要长期记忆
+```
+
+### 记忆文件位置
+
+| 类型 | 路径 |
+|------|------|
+| 核心记忆 | ~/.openclaw/workspace/ (根目录) |
+| 每日日志 | ~/.openclaw/workspace/memory/ |
+| 文档参考 | ~/.openclaw/workspace/docs/ |
+| 技能 | ~/.openclaw/workspace/skills/ |
+
 ---
 
 ## First Run

@@ -26,7 +26,7 @@ pip3 install --break-system-packages edge-tts faster-whisper
 
 将 `scripts/tts_edge.py` 部署到 nf 服务器：
 ```bash
-scp scripts/tts_edge.py openclaw@61.138.213.163:/home/openclaw/.openclaw/workspace/scripts/
+scp scripts/tts_edge.py openclaw@61.138.213.163:~/.openclaw/workspace/scripts/
 ```
 
 ### 3. 常用语音 (Edge TTS)
@@ -100,7 +100,7 @@ message --action send --media /tmp/reply.mp3
 
 ## 文件位置
 
-- 脚本：`/home/openclaw/.openclaw/workspace/scripts/tts_edge.py`
+- 脚本：`~/.openclaw/workspace/scripts/tts_edge.py`
 - 临时输出：`/tmp/tts_output.mp3`
 
 ## 注意事项

@@ -30,7 +30,7 @@
 
 运行搜索脚本：
 ```bash
-cd /home/openclaw/.openclaw/workspace && node scripts/evomap-search.js "<关键词>"
+cd ~/.openclaw/workspace && node scripts/evomap-search.js "<关键词>"
 ```
 
 ### Step 2: 解析结果

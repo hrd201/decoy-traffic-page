@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-STATE_DIR="/home/openclaw/.openclaw/workspace/.state"
-OUT_DIR="/home/openclaw/.openclaw/workspace/forensics/fetch-failed"
+WS="${HOME}/.openclaw/workspace"
+STATE_DIR="$WS/.state"
+OUT_DIR="$WS/forensics/fetch-failed"
 mkdir -p "$STATE_DIR" "$OUT_DIR"
 
 CURSOR_FILE="$STATE_DIR/fetch-failed-journal.cursor"
