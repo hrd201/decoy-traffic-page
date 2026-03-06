@@ -28,16 +28,16 @@
 2026-02-16T11:27:42+0800 debian openclaw[1489092]:     raise JSONDecodeError("Expecting value", s, err.value) from None
 2026-02-16T11:27:42+0800 debian openclaw[1489092]: json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 2026-02-16T11:27:42+0800 debian openclaw[1489092]: Command exited with code 1
-2026-02-16T11:27:45+0800 debian sudo[1492399]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WA ; COMMAND=/usr/bin/systemctl status openclaw-gateway.service --no-pager
+2026-02-16T11:27:45+0800 debian sudo[1492399]: openclaw : PWD=~/.openclaw/workspace ; USER=root ; TSID=WA ; COMMAND=/usr/bin/systemctl status openclaw-gateway.service --no-pager
 2026-02-16T11:27:45+0800 debian sudo[1492399]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
 2026-02-16T11:27:45+0800 debian sudo[1492399]: pam_unix(sudo:session): session closed for user root
 2026-02-16T11:27:54+0800 debian openclaw[1489092]: 2026-02-16T11:27:54.684+08:00 [tools] exec failed: Command exited with code 1
 2026-02-16T11:28:22+0800 debian openclaw[1489092]: 2026-02-16T11:28:22.246+08:00 [tools] exec failed: Command exited with code 1
-2026-02-16T11:28:23+0800 debian sudo[1493130]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WB ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --no-pager --after-cursor s=57cd5fafc9094d9f9037ea5698ab3f3c;i=28a0c1d;b=15199fa9a7f74c5bb22db4054d049e58;m=49c4e2e9449;t=64ae469c6c2e6;x=4e96a264c105c722 -o short-iso
+2026-02-16T11:28:23+0800 debian sudo[1493130]: openclaw : PWD=~/.openclaw/workspace ; USER=root ; TSID=WB ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --no-pager --after-cursor s=57cd5fafc9094d9f9037ea5698ab3f3c;i=28a0c1d;b=15199fa9a7f74c5bb22db4054d049e58;m=49c4e2e9449;t=64ae469c6c2e6;x=4e96a264c105c722 -o short-iso
 2026-02-16T11:28:23+0800 debian sudo[1493130]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
 2026-02-16T11:28:23+0800 debian sudo[1493130]: pam_unix(sudo:session): session closed for user root
-2026-02-16T11:28:23+0800 debian sudo[1493133]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WC ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service -n 1 --show-cursor --no-pager
+2026-02-16T11:28:23+0800 debian sudo[1493133]: openclaw : PWD=~/.openclaw/workspace ; USER=root ; TSID=WC ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service -n 1 --show-cursor --no-pager
 2026-02-16T11:28:23+0800 debian sudo[1493133]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
 2026-02-16T11:28:24+0800 debian sudo[1493133]: pam_unix(sudo:session): session closed for user root
-2026-02-16T11:28:24+0800 debian sudo[1493143]: openclaw : PWD=/home/openclaw/.openclaw/workspace ; USER=root ; TSID=WD ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --since '5 minutes ago' --no-pager -o short-iso
+2026-02-16T11:28:24+0800 debian sudo[1493143]: openclaw : PWD=~/.openclaw/workspace ; USER=root ; TSID=WD ; COMMAND=/usr/bin/journalctl -u openclaw-gateway.service --since '5 minutes ago' --no-pager -o short-iso
 2026-02-16T11:28:24+0800 debian sudo[1493143]: pam_unix(sudo:session): session opened for user root(uid=0) by (uid=1002)
